@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEON WORLD</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  background: #070714;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  background: #7000ff;
+  filter: blur(150px);
+  opacity: .35;
+  top: 10%;
+  left: -100px;
+  z-index: -1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+  border-bottom: 1px solid #ffffff15;
+}
+
+.logo {
+  color: #00f7ff;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.hero {
+  text-align: center;
+  padding: 110px 20px;
+}
+
+.hero h1 {
+  font-size: clamp(35px, 8vw, 75px);
+  text-shadow: 0 0 25px #00eaff;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #00f7ff;
+}
+
+.hero p {
+  color: #aaa;
+  line-height: 2;
+}
+
+button {
+  margin-top: 30px;
+  padding: 15px 35px;
+  background: #00eaff;
+  color: #050510;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 30px #00eaff;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px 8%
+
+
+.card {
+  background: #151528;
+  border: 1px solid #ffffff20;
+  border-radius: 18px;
+  padding: 35px;
+  width: 260px;
+  text-align: center;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #00eaff;
+  box-shadow: 0 0 25px #00eaff30;
+}
+
+.card h2 {
+  color: #00eaff;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #aaa;
+  line-height: 1.8;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+  border-top: 1px solid #ffffff15;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">NEON WORLD</div>
+  <div>
+    <a href="#home">خانه</a>
+    <ahref="#services">امکانات</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <h1>به دنیای <span>نئون</span> خوش آمدی</h1>
+  <p>
+    اینجا دنیای تکنولوژی، خلاقیت و آینده است.
+    <br>
+    متفاوت باش، بدرخش و شروع کن!
+  </p>
+
+  <button onclick="start()">ورود به دنیای من 🚀</button>
+</section>
+
+<section class="cards" id="services">
+
+  <div class="card">
+    <h2>🎮 گیمینگ</h2>
+    <p>دنیای بازی و سرگرمی</p>
+  </div>
+
+  <div class="card">
+    <h2>💻 تکنولوژی</h2>
+    <p>جدیدترین ایده‌های دنیای دیجیتال</p>
+  </div>
+
+  <div class="card">
+    <h2>🚀 آینده</h2>
+    <p>ایده‌های بزرگ از همین‌جا شروع می‌شوند</p>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 NEON WORLD | ساخته شده با عشق به تکنولوژی
+</footer>
+
+<script>
+function start() {
+  alert("به دنیای نئون خوش اومدی! 🚀");
+}
+</script>
+
+</body>
+</html
